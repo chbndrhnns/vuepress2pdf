@@ -8,7 +8,8 @@ RUN apk update && apk upgrade && \
   echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
   apk add --no-cache \
   chromium@edge \
-  nss@edge
+  nss@edge \
+  ttf-freefont
 
 RUN addgroup -S pptruser && adduser -S -g pptruser pptruser \
   && mkdir -p /home/pptruser/Downloads \
