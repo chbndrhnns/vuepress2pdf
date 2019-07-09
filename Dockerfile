@@ -9,6 +9,8 @@ RUN apk update && apk upgrade && \
   apk add --no-cache \
   chromium@edge \
   nss@edge \
+  harfbuzz@edge \
+  freetype@edge \
   ttf-freefont
 
 RUN addgroup -S pptruser && adduser -S -g pptruser pptruser \
